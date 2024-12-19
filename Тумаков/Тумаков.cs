@@ -102,11 +102,44 @@ namespace Tumakov
             bankScore2.MoneyTransferDown(550);
         }
 
+        static void Task4()
+        {
+            StartTask("9.1");
+
+            List<Song> songList = new List<Song>
+        {
+            new Song { name = "Song 1", author = "Author 1" },
+            new Song { name = "Song 2", author = "Author 2" },
+            new Song { name = "Song 3", author = "Author 3" },
+            new Song { name = "Song 4", author = "Author 4" }
+        };
+
+            // Вывод информации о каждой песне
+            foreach (Song song in songList)
+            {
+                Console.WriteLine(song.Title());
+            }
+
+            // Сравнение первой и второй песни в списке
+            if (songList.Count >= 2)
+            {
+                if (songList[0].Equals(songList[1]))
+                {
+                    Console.WriteLine("Первая и вторая песни идентичны.");
+                }
+                else
+                {
+                    Console.WriteLine("Первая и вторая песни различны.");
+                }
+            }
+        }
+
         static void Main()
         {
-            //Task1();
-            //Task2();
+            Task1();
+            Task2();
             Task3();
+            Task4();
         }
     }
 }
