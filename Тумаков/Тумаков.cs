@@ -129,7 +129,7 @@ namespace Tumakov
                 }
                 else
                 {
-                    Console.WriteLine("Первая и вторая песни различны.");
+                    Console.WriteLine("Первая и вторая песни различны."); 
                 }
             }
         }
